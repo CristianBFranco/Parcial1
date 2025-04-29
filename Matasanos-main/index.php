@@ -145,34 +145,34 @@ require ("logica/Medico.php");
 
 						echo "<table border='1'>";
 						echo "<tr>
-       					<th>ID Cita</th>
-        				<th>Fecha</th>
-       					<th>Hora</th>
-       					<th>Paciente Nombre</th>
-        				<th>Paciente Apellido</th>
-        				<th>Médico Nombre</th>
-        				<th>Médico Apellido</th>
-        				<th>Consultorio Nombre</th>
-      					</tr>";
+       						<th>ID Cita</th>
+        					<th>Fecha</th>
+       						<th>Hora</th>
+       						<th>Paciente Nombre</th>
+        					<th>Paciente Apellido</th>
+        					<th>Médico Nombre</th>
+        					<th>Médico Apellido</th>
+        					<th>Consultorio Nombre</th>
+      						</tr>";
 
 						if (count($citas) > 0) {
-    						foreach ($citas as $cita) {
+    							foreach ($citas as $cita) {
         						echo "<tr>
-                				<td>" . $cita['idCita'] . "</td>
-                				<td>" . $cita['fecha'] . "</td>
-                				<td>" . $cita['hora'] . "</td>
-                				<td>" . $cita['paciente_nombre'] . "</td>
-                				<td>" . $cita['paciente_apellido'] . "</td>
-                				<td>" . $cita['medico_nombre'] . "</td>
-                				<td>" . $cita['medico_apellido'] . "</td>
-                				<td>" . $cita['consultorio_nombre'] . "</td>
-             					</tr>";
-    						}
+                					<td>" . $cita['idCita'] . "</td>
+                					<td>" . $cita['fecha'] . "</td>
+                					<td>" . $cita['hora'] . "</td>
+                					<td>" . $cita['paciente_nombre'] . "</td>
+                					<td>" . $cita['paciente_apellido'] . "</td>
+                					<td>" . $cita['medico_nombre'] . "</td>
+                					<td>" . $cita['medico_apellido'] . "</td>
+                					<td>" . $cita['consultorio_nombre'] . "</td>
+             						</tr>";
+    							}
 						}else {
     							echo "<tr><td>No hay citas disponibles</td></tr>";
 							}
 
-							echo "</table>";
+						echo "</table>";
 						?>	
     				</div>
 				</div>
