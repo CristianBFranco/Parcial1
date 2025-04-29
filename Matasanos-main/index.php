@@ -168,7 +168,7 @@ require ("logica/Medico.php");
                 				<td>" . $cita['consultorio_nombre'] . "</td>
              					</tr>";
     						}
-							} else {
+						}else {
     							echo "<tr><td>No hay citas disponibles</td></tr>";
 							}
 
